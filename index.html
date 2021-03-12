@@ -13,19 +13,19 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"seantang-galaxy.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"seantang-galaxy.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":2,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="欢迎你登上这座末日飞船，与光年们一同参观汉霄星系">
+  <meta name="description" content="欢迎你登上这座末日飞船">
 <meta property="og:type" content="website">
 <meta property="og:title" content="唐汉霄的末日飞船">
 <meta property="og:url" content="https://seantang-galaxy.github.io/index.html">
 <meta property="og:site_name" content="唐汉霄的末日飞船">
-<meta property="og:description" content="欢迎你登上这座末日飞船，与光年们一同参观汉霄星系">
+<meta property="og:description" content="欢迎你登上这座末日飞船">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="汉霄星系漫游指南">
 <meta property="article:tag" content="音乐作品,活动,采访,梗">
@@ -103,6 +103,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -111,52 +112,79 @@
 
 
 <nav class="site-nav">
-  <ul id="menu" class="menu">
+  <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">12</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">7</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
-
-  </li>
-        <li class="menu-item menu-item-meme">
-
-    <a href="/meme" rel="section"><i class="fa fa-fw fa-laugh-wink"></i>梗</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">23</span></a>
 
   </li>
         <li class="menu-item menu-item-schedule">
 
-    <a href="/schedule/" rel="section"><i class="fa fa-fw fa-calendar"></i>日程表</a>
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
 
   </li>
         <li class="menu-item menu-item-commonweal">
 
-    <a href="/404.html" rel="section"><i class="fa fa-fw fa-heartbeat"></i>公益 404</a>
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -179,12 +207,12 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://seantang-galaxy.github.io/2021/03/09/%E7%94%B5%E5%8F%B0%E7%9B%B4%E6%92%AD%E5%90%88%E9%9B%86/">
+    <link itemprop="mainEntityOfPage" href="https://seantang-galaxy.github.io/2020/12/17/%E4%B8%931-0%20%E3%80%8A%E9%98%BF%E6%B3%A2%E7%BD%97%E3%80%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="汉霄星系漫游指南">
-      <meta itemprop="description" content="欢迎你登上这座末日飞船，与光年们一同参观汉霄星系">
+      <meta itemprop="description" content="欢迎你登上这座末日飞船">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -193,20 +221,144 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/03/09/%E7%94%B5%E5%8F%B0%E7%9B%B4%E6%92%AD%E5%90%88%E9%9B%86/" class="post-title-link" itemprop="url">电台直播合集</a>
+            <a href="/2020/12/17/%E4%B8%931-0%20%E3%80%8A%E9%98%BF%E6%B3%A2%E7%BD%97%E3%80%8B/" class="post-title-link" itemprop="url">末日飞船第一站 《阿波罗》</a>
         </h2>
 
         <div class="post-meta">
+          
+            <i class="fa fa-thumb-tack"></i>
+            <font color=002699>置顶</font>
+            <span class="post-meta-divider">|</span>
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-12-17 20:00:00" itemprop="dateCreated datePublished" datetime="2020-12-17T20:00:00+08:00">2020-12-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 16:05:04" itemprop="dateModified" datetime="2021-03-12T16:05:04+08:00">2021-03-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B8%AA%E4%BA%BA%E4%B8%93%E8%BE%91/" itemprop="url" rel="index"><span itemprop="name">个人专辑</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="专辑介绍"><a href="#专辑介绍" class="headerlink" title="专辑介绍"></a>专辑介绍</h1><blockquote class="blockquote-center">
+为谁而来，为谁而去
+
+<p>如宿命之约，与你相遇<br>首张个人全创作专辑，无界探索《阿波罗》<br>「思辨音乐」探索之旅最终站<br>《阿波罗》，为谁而来，为谁而去<br>是终点，更是起点</blockquote></p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p> 2020年，出道十二年的唐汉霄终于发布了自己的首张个人全创作专辑《阿波罗》。<br>十首歌，十站旅程，唐汉霄以歌词为舟，用旋律为桨，将自己对内心，对当下世界，<br>对渺小个体和庞大宇宙之间关系，对爱的探索思考，一一展示了出来。<br>而金曲奖视觉统筹颜伯骏操刀设计的十张封面，也是用层层套索层层渐进的方式，<br>将这场音乐之旅的空间感，体现得淋漓尽致。</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/12/17/%E4%B8%931-0%20%E3%80%8A%E9%98%BF%E6%B3%A2%E7%BD%97%E3%80%8B/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://seantang-galaxy.github.io/2021/03/09/%E7%94%B5%E5%8F%B0%E7%9B%B4%E6%92%AD%E5%90%88%E9%9B%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="汉霄星系漫游指南">
+      <meta itemprop="description" content="欢迎你登上这座末日飞船">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="唐汉霄的末日飞船">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/03/09/%E7%94%B5%E5%8F%B0%E7%9B%B4%E6%92%AD%E5%90%88%E9%9B%86/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
 
               <time title="创建时间：2021-03-09 11:47:43" itemprop="dateCreated datePublished" datetime="2021-03-09T11:47:43+08:00">2021-03-09</time>
             </span>
 
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span></span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>NaN:aN</span>
+            </span>
 
         </div>
       </header>
@@ -241,7 +393,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="汉霄星系漫游指南">
-      <meta itemprop="description" content="欢迎你登上这座末日飞船，与光年们一同参观汉霄星系">
+      <meta itemprop="description" content="欢迎你登上这座末日飞船">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -254,9 +406,10 @@
         </h2>
 
         <div class="post-meta">
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
 
@@ -264,14 +417,14 @@
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
                 <time title="修改时间：2021-02-12 22:00:59" itemprop="dateModified" datetime="2021-02-12T22:00:59+08:00">2021-02-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -279,7 +432,21 @@
                 </span>
             </span>
 
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span></span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>NaN:aN</span>
+            </span>
 
         </div>
       </header>
@@ -291,7 +458,7 @@
 
       
           <p>恭喜张韶涵和唐汉霄共同演绎的《恐慌症》获得了“荣耀金曲”</p>
-<p>Angela舞台首秀rap，情感张力层层递进，充满层次感和力量感<br>音频：<a href="https://c.y.qq.com/base/fcgi-bin/u?__=HwNbJo8" target="_blank" rel="noopener">QQ音乐</a> <a href="https://t3.kugou.com/song.html?id=1GqPFf1xUV2" target="_blank" rel="noopener">酷狗音乐</a>  <a href="http://www.kuwo.cn/yinyue/165690500" target="_blank" rel="noopener">酷我音乐</a><br>视频：<a href="https://c.y.qq.com/base/fcgi-bin/u?__=IqPwdvB" target="_blank" rel="noopener">QQ音乐</a> <a href="https://t.kugou.com/1Gufs9fxUV2" target="_blank" rel="noopener">酷狗音乐</a><br>完整节目(41:57-45:23-49:22)：<a href="http://www.zjstv.com/zcloud/video/8396434.html" target="_blank" rel="noopener">浙江卫视</a> <a href="https://www.iqiyi.com/v_14ogc03pkbc.html?vfm=2008_aldbd&fv=p_02_01" target="_blank" rel="noopener">爱奇艺</a> <a href="https://v.qq.com/x/cover/mzc00200z1lx3qf.html" target="_blank" rel="noopener">腾讯视频</a> <a href="https://v.youku.com/v_show/id_XNTA0NTM2OTU5Ng==.html?tpa=dW5pb25faWQ9MTAzNzUzXzEwMDAwMV8wMV8wMQ&refer=sousuotoufang_market.qrwang_00002944_000000_QJFFvi_19031900" target="_blank" rel="noopener">优酷</a></p>
+<p>Angela舞台首秀rap，情感张力层层递进，充满层次感和力量感<br>音频：<a target="_blank" rel="noopener" href="https://c.y.qq.com/base/fcgi-bin/u?__=HwNbJo8">QQ音乐</a> <a target="_blank" rel="noopener" href="https://t3.kugou.com/song.html?id=1GqPFf1xUV2">酷狗音乐</a>  <a target="_blank" rel="noopener" href="http://www.kuwo.cn/yinyue/165690500">酷我音乐</a><br>视频：<a target="_blank" rel="noopener" href="https://c.y.qq.com/base/fcgi-bin/u?__=IqPwdvB">QQ音乐</a> <a target="_blank" rel="noopener" href="https://t.kugou.com/1Gufs9fxUV2">酷狗音乐</a><br>完整节目(41:57-45:23-49:22)：<a target="_blank" rel="noopener" href="http://www.zjstv.com/zcloud/video/8396434.html">浙江卫视</a> <a target="_blank" rel="noopener" href="https://www.iqiyi.com/v_14ogc03pkbc.html?vfm=2008_aldbd&fv=p_02_01">爱奇艺</a> <a target="_blank" rel="noopener" href="https://v.qq.com/x/cover/mzc00200z1lx3qf.html">腾讯视频</a> <a target="_blank" rel="noopener" href="https://v.youku.com/v_show/id_XNTA0NTM2OTU5Ng==.html?tpa=dW5pb25faWQ9MTAzNzUzXzEwMDAwMV8wMV8wMQ&refer=sousuotoufang_market.qrwang_00002944_000000_QJFFvi_19031900">优酷</a></p>
 
       
     </div>
@@ -316,7 +483,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="汉霄星系漫游指南">
-      <meta itemprop="description" content="欢迎你登上这座末日飞船，与光年们一同参观汉霄星系">
+      <meta itemprop="description" content="欢迎你登上这座末日飞船">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -329,9 +496,10 @@
         </h2>
 
         <div class="post-meta">
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
 
@@ -339,14 +507,14 @@
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
                 <time title="修改时间：2021-02-12 22:14:51" itemprop="dateModified" datetime="2021-02-12T22:14:51+08:00">2021-02-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -354,7 +522,21 @@
                 </span>
             </span>
 
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span></span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>NaN:aN</span>
+            </span>
 
         </div>
       </header>
@@ -385,156 +567,12 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://seantang-galaxy.github.io/2020/12/17/%E4%B8%931-0%20%E3%80%8A%E9%98%BF%E6%B3%A2%E7%BD%97%E3%80%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="汉霄星系漫游指南">
-      <meta itemprop="description" content="欢迎你登上这座末日飞船，与光年们一同参观汉霄星系">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="唐汉霄的末日飞船">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/12/17/%E4%B8%931-0%20%E3%80%8A%E9%98%BF%E6%B3%A2%E7%BD%97%E3%80%8B/" class="post-title-link" itemprop="url">末日飞船第一站 《阿波罗》</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-12-17 20:00:00" itemprop="dateCreated datePublished" datetime="2020-12-17T20:00:00+08:00">2020-12-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-09 12:38:55" itemprop="dateModified" datetime="2021-03-09T12:38:55+08:00">2021-03-09</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B8%AA%E4%BA%BA%E4%B8%93%E8%BE%91/" itemprop="url" rel="index"><span itemprop="name">个人专辑</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="专辑介绍"><a href="#专辑介绍" class="headerlink" title="专辑介绍"></a>专辑介绍</h1><blockquote class="blockquote-center">
-为谁而来，为谁而去
-
-<p>如宿命之约，与你相遇<br>首张个人全创作专辑，无界探索《阿波罗》<br>「思辨音乐」探索之旅最终站<br>《阿波罗》，为谁而来，为谁而去<br>是终点，更是起点</blockquote></p>
-<blockquote class="blockquote-center">
-            <p> 2020年，出道十二年的唐汉霄终于发布了自己的首张个人全创作专辑《阿波罗》。<br>十首歌，十站旅程，唐汉霄以歌词为舟，用旋律为桨，将自己对内心，对当下世界，<br>对渺小个体和庞大宇宙之间关系，对爱的探索思考，一一展示了出来。<br>而金曲奖视觉统筹颜伯骏操刀设计的十张封面，也是用层层套索层层渐进的方式，<br>将这场音乐之旅的空间感，体现得淋漓尽致。</p>
-
-          </blockquote>
-
-<p><strong>起点：《双鱼》</strong></p>
-<blockquote>
-<p>整张专辑的第一首单曲。在2008年夺得《我型我秀》的冠军之后，唐汉霄更多是专注于幕后的制作工作，创作了如《让我留在你身边》、《无名之辈》这样的大热金曲……作为制作人，唐汉霄总是可以考虑到各方面的需求，得到大家的认可。而与此同时，唐汉霄也从未停止思考过“我自己，是什么样的？”。《双鱼》，作为整张专辑的第一首单曲，将焦点拉回了个体之上，从哲学思辨中最基础的问题——“我，是谁？”开始，将自己玩玩整整的剖析。把自我探索作为这一张专辑的起源点。</p>
-</blockquote>
-<p><strong>第二站：《Hello Goodbye》</strong></p>
-<blockquote>
-<p>若说《末日飞船》是对人类在宇宙洪流，时间长河中存在意义的回答，那么《Hello Goodbye》则似乎是在末日之前的思考和诘问。在这个不同寻常的2020年，大家都经历了太多没有准备好的离别。或许，人们不过是在或长或短的时间里说了“你好”和“再见”这两个词，可是大家常常只会在“再见”的痛苦里徘徊，忘记了世间所有的事物力量永远是平衡的。“你好”和“再见”是一种平衡，它像一个车轮永远滚动的列车，带领人们去到很多地方，看见很多风景。</p>
-</blockquote>
-<p><strong>第三站：《遥望天体》</strong></p>
-<blockquote>
-<p>这是一首彻彻底底的情歌。“我是遥望者，而对方就是我正遥望的天体”。这首歌体现了汉霄的感情观，是汉霄独特的表达方式。《遥望天体》，就像是一封情书，是由阿波罗飞船发出的盈盈信号，感慨宇宙的浩渺无垠，诉说对于宇宙奥妙的好奇与神往……而“你”，就是“我”的宇宙。</p>
-</blockquote>
-<p><strong>第四站：《原子》</strong></p>
-<blockquote>
-<p>《原子》，回归到最简单原始的单位，探寻日常生活的本质轨迹。正如歌词所说，“一个一个独一无二的名字，一个一个组成世界的单词”。世间芸芸万物，每一个生命都是独立的个体，都有自己既定的运动轨道。然而，这些轨道也并非平行而没有交集，当不同的轨迹发生交叠，原本独立的个体发生碰撞，就会在永恒的时间尺度里，留下一些不一样的瞬间，留下恨与爱的痕迹。</p>
-</blockquote>
-<p><strong>第五站：《少年派》</strong></p>
-<blockquote>
-<p>灵感来源于李安导演的《少年派的奇幻漂流》。“我们每一个人终究要孤帆远航，前往世界或生命的尽头，可在路上终究会遇到那样一个人，尽管可能无法与你共同到达终点，可那个人会使你热爱这个世界，成为你的信念，这个人可能是爱人，也可能是父母”。 人们在成长的旅途中总会遭遇这样的时刻——当脱离旅途刚刚启程的兴奋与激动，或是疲惫于一直步履不停的行程，或是受挫于路途中的坎坷和荆棘，总会需要停下脚步，稍事休息，反思这段旅途的意义。然而理想终究会给出指引，守候在起点处的亲人，沿途遇到的朋友、爱人，也将成为那只无形中将你推向前方的手。</p>
-</blockquote>
-<p><strong>第六站：《巨人》</strong></p>
-<blockquote>
-<p>在辽阔的原野之上，俯瞰过去，个体的渺小或许不值一提，然而赤手空拳地拼搏向前，开拓出的山海巨浪、天地苍莽，尽收眼底，却也是在描绘属于自己人生的巨幅画卷。</p>
-</blockquote>
-<p><strong>第七站：《Summer Valentine》</strong></p>
-<blockquote>
-<p>吉他轻奏，浪花微打，细沙滑过脚尖，微风拂起发丝，嘴唇微张，是夏日情人之间的蜜语。慵懒的吉他弹奏，随性的鼓点敲击，Dream Pop梦幻又迷离的氛围，似是海边薄雾，也仿佛是威士忌的微醺，将人包裹其中。</p>
-</blockquote>
-<p><strong>第八站：《诺曼底》</strong></p>
-<blockquote>
-<p>是汉霄搬进“诺曼底公寓”后写的第一首歌。小小的一座公寓，就如同大千世界的缩影，窗内灯明灯暗，人来人往，每一个小小的房间里，都有属于各自的喜怒哀乐、冷暖寒凉。所有的个体汇集在一起，就形成了这栋建筑物里独有的温度。“诺曼底公寓”，在见证历史的同时，也成为了历史，而每一个曾经来到过这间公寓的人，也都成为了历史的一部分，都成为了历史的参与者。</p>
-</blockquote>
-<p><strong>第九站：《西伯利亚》</strong></p>
-<blockquote>
-<p>西伯利亚，意为“沉睡之地”，是一月平均气温低至-25℃的苦寒之所。荒原雪地，河流因为西波尔的风被冻结，大地被极昼极夜笼罩。面对无限延展的黑白和寂静，视觉和听觉都被一同没收，指尖传来冰冷的温度，麻木了时、分、秒的概念，时间的尺度似乎被无限拉长。在这世界角落，你我的眷恋不知是得以永存，还是被永远遗弃。占有一个事物之幸，必将体会失去一个事物之苦。或许最终只能把一切留置在西伯利亚，在这看似永冻之土中，任由时间给出答案。</p>
-</blockquote>
-<p><strong>最终站：《阿波罗》</strong></p>
-<blockquote>
-<p>随着专辑同名压轴单曲《阿波罗》的释出，这场“思辨音乐”无界探索之旅的地图最后一角，也终于被打开。与《遥望天体》中，宁静而悠长的盈盈信号般的诉说不同，《阿波罗》是与“你”十指紧扣，直接而炽烈的倾吐。你就如同是昏暗天空中照射进来的那一缕光线一样，带来光明，带来精神上的自由。你是我长此以往的追寻，是我永恒不变的主题。“爱和爱情是不一样的，爱情是希望得到回馈，爱是不图回报的”。</p>
-</blockquote>
-<blockquote class="blockquote-center">
-            <p> 《阿波罗》是唐汉霄的首张个人原创专辑，除了作词作曲，他还担纲了全部十首歌的制作人。<br>在专属于自己的音乐里，他是自由的，他是掌舵者，驾驶着名为音乐的方舟，<br>带领大家在浩瀚无垠的音乐宇宙中遨游探索，聆听来自世界角落的回响。<br>虽然名为《阿波罗》的旅程，在历史整整一年之后即将告一段落，<br>但属于唐汉霄的音乐探索之旅，才刚刚开始。</p>
-
-          </blockquote>
-
-<h2 id="播放传送门"><a href="#播放传送门" class="headerlink" title="播放传送门"></a>播放传送门</h2><p>正式专辑：<a target="_blank" rel="noopener" href="https://c.y.qq.com/base/fcgi-bin/u?__=oH0mXgR">QQ音乐</a> <a target="_blank" rel="noopener" href="https://www.kugou.com/album/40637460.html">酷狗音乐</a> <a target="_blank" rel="noopener" href="http://www.kuwo.cn/down/album/17114035">酷我音乐</a> <a target="_blank" rel="noopener" href="http://music.163.com/album?id=120448090&userid=321812989">网易云音乐</a></p>
-<h2 id="实体专辑"><a href="#实体专辑" class="headerlink" title="实体专辑"></a>实体专辑</h2><img src="/images/album_Apollo.jpg" width="50%" height="50%">
-
-<div class="note info">
-            <p><strong>线上预购链接：</strong><br><a target="_blank" rel="noopener" href="http://t.cn/A65FjMfx">网易云音乐商城</a> 、 <a target="_blank" rel="noopener" href="http://t.cn/A65k6GXX">天猫天沐音像专营店</a> 、 <a target="_blank" rel="noopener" href="http://t.cn/A65k6GXj">天风天猫专营店</a> 、 <a target="_blank" rel="noopener" href="http://t.cn/A65FjMfi">星碟音像专营店</a> 、 <a target="_blank" rel="noopener" href="http://t.cn/A65Fjns6">京东</a></p>
-          </div>
-<div class="note info">
-            <p><strong>线下实体店购买:</strong><br>北京：北京音像大厦、西单图书大厦、中关村图书大厦、王府井图书大厦、国家大剧院、天天艺术、福声<br>广东：广东音像城、珠海书城、深圳书城<br>浙江：杭州鸿发<br>河北：秦皇岛经典音像、张家口流行磁场、廊坊金韵<br>江苏：苏州诚品书店<br>辽宁：沈阳飞虹音像<br>福建：漳州石头音像</p>
-          </div>
-
-<p>ps: 限量版专辑中有30张亲签福利，其中5张还附带灵魂画手的独家配方，祝大家好运~<br>视频戳这里~<a target="_blank" rel="noopener" href="https://weibo.com/6407958351/K3HDYgYOF">元宵节快乐！前方惊喜到达…《阿波罗》专辑里有什么彩蛋等待着大家呢？</a></p>
-<h1 id="专辑相关活动"><a href="#专辑相关活动" class="headerlink" title="专辑相关活动"></a>专辑相关活动</h1><p>营业小唐来啦~</p>
-<h2 id="微博动态"><a href="#微博动态" class="headerlink" title="微博动态"></a>微博动态</h2><p><a target="_blank" rel="noopener" href="https://weibo.com/1706715944/JyUVNwn3A">Ψ(￣∀￣)Ψ 吃货唐：发专辑了，庆祝一下</a></p>
-<h2 id="诺曼底卧室音乐会"><a href="#诺曼底卧室音乐会" class="headerlink" title="诺曼底卧室音乐会"></a>诺曼底卧室音乐会</h2><p>完整版指路：<a target="_blank" rel="noopener" href="https://weibo.com/1706715944/JzGgPatmm">微博直播</a>  <a target="_blank" rel="noopener" href="https://weibo.com/1706715944/JzM9nlCP4">微博</a>  <a target="_blank" rel="noopener" href="https://c.y.qq.com/base/fcgi-bin/u?__=ofTjlvT">QQ音乐</a>  <a target="_blank" rel="noopener" href="http://music.163.com/mv/?id=14215576&userid=321812989">网易云音乐</a>  <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV19a4y1H7QJ">B站</a></p>
-<iframe src="//player.bilibili.com/player.html?aid=670718100&bvid=BV19a4y1H7QJ&cid=269265155&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<h2 id="网易云音乐《音乐人来了》电台直播"><a href="#网易云音乐《音乐人来了》电台直播" class="headerlink" title="网易云音乐《音乐人来了》电台直播"></a>网易云音乐《音乐人来了》电台直播</h2><p><a target="_blank" rel="noopener" href="http://music.163.com/dj?id=2486745803&userid=321812989">音频传送门</a><br>直播看点请戳这篇~</p>
-<h1 id="专辑歌曲详情介绍指路"><a href="#专辑歌曲详情介绍指路" class="headerlink" title="专辑歌曲详情介绍指路"></a>专辑歌曲详情介绍指路</h1><h2 id="《双鱼》"><a href="#《双鱼》" class="headerlink" title="《双鱼》"></a>《双鱼》</h2><h2 id="《Hello-Goodbye》"><a href="#《Hello-Goodbye》" class="headerlink" title="《Hello Goodbye》"></a>《Hello Goodbye》</h2><h2 id="《遥望天体》"><a href="#《遥望天体》" class="headerlink" title="《遥望天体》"></a>《遥望天体》</h2><h2 id="《原子》"><a href="#《原子》" class="headerlink" title="《原子》"></a>《原子》</h2><h2 id="《少年派》"><a href="#《少年派》" class="headerlink" title="《少年派》"></a>《少年派》</h2><h2 id="《巨人》"><a href="#《巨人》" class="headerlink" title="《巨人》"></a>《巨人》</h2><h2 id="《Summer-Valentine》"><a href="#《Summer-Valentine》" class="headerlink" title="《Summer Valentine》"></a>《Summer Valentine》</h2><h2 id="《诺曼底》"><a href="#《诺曼底》" class="headerlink" title="《诺曼底》"></a>《诺曼底》</h2><h2 id="《西伯利亚》"><a href="#《西伯利亚》" class="headerlink" title="《西伯利亚》"></a>《西伯利亚》</h2><h2 id="《阿波罗》"><a href="#《阿波罗》" class="headerlink" title="《阿波罗》"></a>《阿波罗》</h2>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://seantang-galaxy.github.io/2020/12/17/%E4%B8%931-10%20%E9%98%BF%E6%B3%A2%E7%BD%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="汉霄星系漫游指南">
-      <meta itemprop="description" content="欢迎你登上这座末日飞船，与光年们一同参观汉霄星系">
+      <meta itemprop="description" content="欢迎你登上这座末日飞船">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -547,9 +585,10 @@
         </h2>
 
         <div class="post-meta">
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
 
@@ -557,14 +596,14 @@
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
                 <time title="修改时间：2021-03-09 11:47:43" itemprop="dateModified" datetime="2021-03-09T11:47:43+08:00">2021-03-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -572,7 +611,21 @@
                 </span>
             </span>
 
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span></span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>NaN:aN</span>
+            </span>
 
         </div>
       </header>
@@ -583,7 +636,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>微博动态<br><a href="https://weibo.com/1706715944/JyUMTwuc1" target="_blank" rel="noopener">以阿波罗之名，以太阳神之力，以宇宙永恒之理，转化一切苦为包容之爱。</a></p>
+          <p>微博动态<br><a target="_blank" rel="noopener" href="https://weibo.com/1706715944/JyUMTwuc1">以阿波罗之名，以太阳神之力，以宇宙永恒之理，转化一切苦为包容之爱。</a></p>
 <p>评论区空降<br><a href="">2020-12-21 网易云音乐</a><br><a href="">2020-12-23 QQ音乐</a></p>
 <p>超话应援</p>
 
@@ -610,7 +663,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="汉霄星系漫游指南">
-      <meta itemprop="description" content="欢迎你登上这座末日飞船，与光年们一同参观汉霄星系">
+      <meta itemprop="description" content="欢迎你登上这座末日飞船">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -623,9 +676,10 @@
         </h2>
 
         <div class="post-meta">
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
 
@@ -633,13 +687,27 @@
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
                 <time title="修改时间：2020-12-27 10:55:22" itemprop="dateModified" datetime="2020-12-27T10:55:22+08:00">2020-12-27</time>
               </span>
 
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span></span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>NaN:aN</span>
+            </span>
 
         </div>
       </header>
@@ -650,7 +718,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><a href="">工作室微博</a><br><a target="_blank" rel="noopener" href="https://weibo.com/6617332892/ICcRVcnMw">官方后援会微博</a><br><a href="https://weibo.com/p/10080812b1383abe5bbdf1d53f01c115b84437/super_index" target="_blank" rel="noopener">微博超话</a></p>
+          <p><a href="">工作室微博</a><br><a target="_blank" rel="noopener" href="https://weibo.com/6617332892/ICcRVcnMw">官方后援会微博</a><br><a target="_blank" rel="noopener" href="https://weibo.com/p/10080812b1383abe5bbdf1d53f01c115b84437/super_index">微博超话</a></p>
 
       
     </div>
@@ -675,7 +743,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="汉霄星系漫游指南">
-      <meta itemprop="description" content="欢迎你登上这座末日飞船，与光年们一同参观汉霄星系">
+      <meta itemprop="description" content="欢迎你登上这座末日飞船">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -688,9 +756,10 @@
         </h2>
 
         <div class="post-meta">
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
 
@@ -698,14 +767,14 @@
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
                 <time title="修改时间：2021-03-09 11:47:43" itemprop="dateModified" datetime="2021-03-09T11:47:43+08:00">2021-03-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -713,7 +782,21 @@
                 </span>
             </span>
 
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span></span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>NaN:aN</span>
+            </span>
 
         </div>
       </header>
@@ -748,7 +831,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="汉霄星系漫游指南">
-      <meta itemprop="description" content="欢迎你登上这座末日飞船，与光年们一同参观汉霄星系">
+      <meta itemprop="description" content="欢迎你登上这座末日飞船">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -761,9 +844,10 @@
         </h2>
 
         <div class="post-meta">
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
 
@@ -771,14 +855,14 @@
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
                 <time title="修改时间：2021-03-09 11:47:43" itemprop="dateModified" datetime="2021-03-09T11:47:43+08:00">2021-03-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -786,7 +870,21 @@
                 </span>
             </span>
 
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span></span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>NaN:aN</span>
+            </span>
 
         </div>
       </header>
@@ -821,7 +919,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="汉霄星系漫游指南">
-      <meta itemprop="description" content="欢迎你登上这座末日飞船，与光年们一同参观汉霄星系">
+      <meta itemprop="description" content="欢迎你登上这座末日飞船">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -834,9 +932,10 @@
         </h2>
 
         <div class="post-meta">
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
 
@@ -844,13 +943,27 @@
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
                 <time title="修改时间：2021-03-09 11:47:43" itemprop="dateModified" datetime="2021-03-09T11:47:43+08:00">2021-03-09</time>
               </span>
 
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span></span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>NaN:aN</span>
+            </span>
 
         </div>
       </header>
@@ -885,7 +998,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="汉霄星系漫游指南">
-      <meta itemprop="description" content="欢迎你登上这座末日飞船，与光年们一同参观汉霄星系">
+      <meta itemprop="description" content="欢迎你登上这座末日飞船">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -898,9 +1011,10 @@
         </h2>
 
         <div class="post-meta">
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
 
@@ -908,13 +1022,27 @@
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
                 <time title="修改时间：2021-03-09 11:47:43" itemprop="dateModified" datetime="2021-03-09T11:47:43+08:00">2021-03-09</time>
               </span>
 
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span></span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>NaN:aN</span>
+            </span>
 
         </div>
       </header>
@@ -1004,7 +1132,7 @@
     <img class="site-author-image" itemprop="image" alt="汉霄星系漫游指南"
       src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">汉霄星系漫游指南</p>
-  <div class="site-description" itemprop="description">欢迎你登上这座末日飞船，与光年们一同参观汉霄星系</div>
+  <div class="site-description" itemprop="description">欢迎你登上这座末日飞船</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -1029,6 +1157,14 @@
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/p/1005057126261213/photos?from=page_100505" title="微博 → https:&#x2F;&#x2F;weibo.com&#x2F;p&#x2F;1005057126261213&#x2F;photos?from&#x3D;page_100505" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>微博</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://music.163.com/#/user/home?id=2106020247" title="网易云音乐 → https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;2106020247" rel="noopener" target="_blank"><i class="fa fa-music fa-fw"></i>网易云音乐</a>
+      </span>
+  </div>
 
 
 
@@ -1050,14 +1186,24 @@
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 1989 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">汉霄星系漫游指南</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">NaNm</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">NaN:aN</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
         
@@ -1083,7 +1229,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
@@ -1094,6 +1240,10 @@
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 

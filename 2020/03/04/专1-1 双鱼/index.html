@@ -13,11 +13,11 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"seantang-galaxy.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"seantang-galaxy.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":2,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="歌曲详情 简介这是唐汉霄的首张个人专辑《阿波罗》的首发歌曲，是 歌词作曲 : 唐汉霄作词 : 唐汉霄编曲 Arranger：唐汉霄、栾卓忻 温柔 矫作 病态 又多情失控 隐忍 放肆 又空虚想得通 这个世界的道理却还弄不清自己 走在一面悬崖一面荆棘一面湖泊一面森林一个人 活像个电影选择拥抱别人丢弃自己飞向光明坠入地狱对于爱 都难以抗拒我名字叫做双鱼 AhLove is everything 真实 虚">
@@ -32,8 +32,8 @@
 <meta property="article:modified_time" content="2021-03-09T03:47:43.700Z">
 <meta property="article:author" content="汉霄星系漫游指南">
 <meta property="article:tag" content="阿波罗">
-<meta property="article:tag" content="双鱼">
 <meta property="article:tag" content="首专">
+<meta property="article:tag" content="双鱼">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://seantang-galaxy.github.io/images/album_shuangyu.jpg">
 
@@ -109,6 +109,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -117,52 +118,79 @@
 
 
 <nav class="site-nav">
-  <ul id="menu" class="menu">
+  <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">12</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">7</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
-
-  </li>
-        <li class="menu-item menu-item-meme">
-
-    <a href="/meme" rel="section"><i class="fa fa-fw fa-laugh-wink"></i>梗</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">23</span></a>
 
   </li>
         <li class="menu-item menu-item-schedule">
 
-    <a href="/schedule/" rel="section"><i class="fa fa-fw fa-calendar"></i>日程表</a>
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
 
   </li>
         <li class="menu-item menu-item-commonweal">
 
-    <a href="/404.html" rel="section"><i class="fa fa-fw fa-heartbeat"></i>公益 404</a>
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -191,7 +219,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="汉霄星系漫游指南">
-      <meta itemprop="description" content="欢迎你登上这座末日飞船，与光年们一同参观汉霄星系">
+      <meta itemprop="description" content="欢迎你登上这座末日飞船">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -203,9 +231,10 @@
         </h1>
 
         <div class="post-meta">
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
 
@@ -213,14 +242,14 @@
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
                 <time title="修改时间：2021-03-09 11:47:43" itemprop="dateModified" datetime="2021-03-09T11:47:43+08:00">2021-03-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -228,7 +257,21 @@
                 </span>
             </span>
 
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span></span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>NaN:aN</span>
+            </span>
 
         </div>
       </header>
@@ -239,7 +282,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="歌曲详情"><a href="#歌曲详情" class="headerlink" title="歌曲详情"></a>歌曲详情</h1><p><img src="/images/album_shuangyu.jpg" alt=""></p>
+        <h1 id="歌曲详情"><a href="#歌曲详情" class="headerlink" title="歌曲详情"></a>歌曲详情</h1><p><img src="/images/album_shuangyu.jpg"></p>
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>这是唐汉霄的首张个人专辑《阿波罗》的首发歌曲，是</p>
 <h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><p>作曲 : 唐汉霄<br>作词 : 唐汉霄<br>编曲 Arranger：唐汉霄、栾卓忻</p>
 <p>温柔 矫作 病态 又多情<br>失控 隐忍 放肆 又空虚<br>想得通 这个世界的道理<br>却还弄不清自己</p>
@@ -253,22 +296,39 @@
 <p>Q2：老唐觉得双鱼座是什么样<br>A2：</p>
 <p>Q3：这首歌有什么创作背景故事吗？<br>A3：</p>
 <p>Q4：<br>A4：</p>
-<h1 id="活动周边"><a href="#活动周边" class="headerlink" title="活动周边"></a>活动周边</h1><p><a href="https://weibo.com/1706715944/IvNZlrgfQ" target="_blank" rel="noopener">活动微博</a><br><a href="https://weibo.com/1680990025/IvNEW7utD" target="_blank" rel="noopener">活动原博-双鱼月 Alex大叔盘星座</a><br><a href="https://weibo.com/6617332892/IyIhNAIWB" target="_blank" rel="noopener">见面吧！首唱 唐汉霄《双鱼》分享会</a><br><a href="https://weibo.com/3252743925/Ixyp168Ja" target="_blank" rel="noopener">有我陪你线上音乐节-微博音乐-撩人的双鱼电话粥</a><br><a href="https://m.weibo.cn/1748816061/4483187189403957" target="_blank" rel="noopener">饭制Q版双鱼唐</a><br><a href="https://weibo.com/6617332892/Ix5ENAKM3" target="_blank" rel="noopener">QQ音乐评论区问答汇总</a><br><a href="">微博投票-老唐的最佳侧面</a><br><a target="_blank" rel="noopener" href="https://weibo.com/6617332892/ICdcD79te">打榜应援</a></p>
-<h3 id="歌曲指南"><a href="#歌曲指南" class="headerlink" title="歌曲指南"></a>歌曲指南</h3><h4 id="gt-gt-歌曲链接"><a href="#gt-gt-歌曲链接" class="headerlink" title="&gt;&gt; 歌曲链接"></a>&gt;&gt; 歌曲链接</h4><p><a href="https://weibo.com/1706715944/IwSxef4Oq" target="_blank" rel="noopener">预告微博</a><br><a href="https://y.qq.com/n/yqq/song/000o4j7H3vpFPk.html" target="_blank" rel="noopener">QQ音乐</a>  <a href="https://music.163.com/#/song?id=1427574421" target="_blank" rel="noopener">网易云音乐</a>  <a href="http://www.kuwo.cn/play_detail/90952259" target="_blank" rel="noopener">酷我音乐</a><br><a href="http://www.kugou.com/share/wexH90wjV3.html?id=wexH90wjV3#hash=C8564BCFEAF321C8BC1D497E877F6EEC&album_id=36490932" target="_blank" rel="noopener">酷狗音乐</a></p>
-<p><a href="https://music.163.com/#/playlist?id=4908834437" target="_blank" rel="noopener">唐汉霄个人歌单-星座漫游2020|双鱼</a></p>
-<h4 id="gt-gt-MV链接"><a href="#gt-gt-MV链接" class="headerlink" title="&gt;&gt; MV链接"></a>&gt;&gt; MV链接</h4><p><a href="https://weibo.com/1706715944/Ix4NV7yjS" target="_blank" rel="noopener">微博</a>  <a href="">QQ音乐</a>  <a target="_blank" rel="noopener" href="https://music.163.com/#/mv?id=10919204">网易云音乐</a>  <a href="https://www.bilibili.com/video/BV1vE411472Z" target="_blank" rel="noopener">哔哩哔哩</a></p>
+<h1 id="活动周边"><a href="#活动周边" class="headerlink" title="活动周边"></a>活动周边</h1><p><a target="_blank" rel="noopener" href="https://weibo.com/1706715944/IvNZlrgfQ">活动微博</a><br><a target="_blank" rel="noopener" href="https://weibo.com/1680990025/IvNEW7utD">活动原博-双鱼月 Alex大叔盘星座</a><br><a target="_blank" rel="noopener" href="https://weibo.com/6617332892/IyIhNAIWB">见面吧！首唱 唐汉霄《双鱼》分享会</a><br><a target="_blank" rel="noopener" href="https://weibo.com/3252743925/Ixyp168Ja">有我陪你线上音乐节-微博音乐-撩人的双鱼电话粥</a><br><a target="_blank" rel="noopener" href="https://m.weibo.cn/1748816061/4483187189403957">饭制Q版双鱼唐</a><br><a target="_blank" rel="noopener" href="https://weibo.com/6617332892/Ix5ENAKM3">QQ音乐评论区问答汇总</a><br><a href="">微博投票-老唐的最佳侧面</a><br><a target="_blank" rel="noopener" href="https://weibo.com/6617332892/ICdcD79te">打榜应援</a></p>
+<h3 id="歌曲指南"><a href="#歌曲指南" class="headerlink" title="歌曲指南"></a>歌曲指南</h3><h4 id="gt-gt-歌曲链接"><a href="#gt-gt-歌曲链接" class="headerlink" title="&gt;&gt; 歌曲链接"></a>&gt;&gt; 歌曲链接</h4><p><a target="_blank" rel="noopener" href="https://weibo.com/1706715944/IwSxef4Oq">预告微博</a><br><a target="_blank" rel="noopener" href="https://y.qq.com/n/yqq/song/000o4j7H3vpFPk.html">QQ音乐</a>  <a target="_blank" rel="noopener" href="https://music.163.com/#/song?id=1427574421">网易云音乐</a>  <a target="_blank" rel="noopener" href="http://www.kuwo.cn/play_detail/90952259">酷我音乐</a><br><a target="_blank" rel="noopener" href="http://www.kugou.com/share/wexH90wjV3.html?id=wexH90wjV3#hash=C8564BCFEAF321C8BC1D497E877F6EEC&album_id=36490932">酷狗音乐</a></p>
+<p><a target="_blank" rel="noopener" href="https://music.163.com/#/playlist?id=4908834437">唐汉霄个人歌单-星座漫游2020|双鱼</a></p>
+<h4 id="gt-gt-MV链接"><a href="#gt-gt-MV链接" class="headerlink" title="&gt;&gt; MV链接"></a>&gt;&gt; MV链接</h4><p><a target="_blank" rel="noopener" href="https://weibo.com/1706715944/Ix4NV7yjS">微博</a>  <a href="">QQ音乐</a>  <a target="_blank" rel="noopener" href="https://music.163.com/#/mv?id=10919204">网易云音乐</a>  <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1vE411472Z">哔哩哔哩</a></p>
 <h4 id="gt-gt-歌词"><a href="#gt-gt-歌词" class="headerlink" title="&gt;&gt; 歌词"></a>&gt;&gt; 歌词</h4>
     </div>
 
     
     
     
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>汉霄星系漫游指南
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://seantang-galaxy.github.io/2020/03/04/%E4%B8%931-1%20%E5%8F%8C%E9%B1%BC/" title="双鱼">https://seantang-galaxy.github.io/2020/03/04/专1-1 双鱼/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
 
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/%E9%98%BF%E6%B3%A2%E7%BD%97/" rel="tag"># 阿波罗</a>
-              <a href="/tags/%E5%8F%8C%E9%B1%BC/" rel="tag"># 双鱼</a>
               <a href="/tags/%E9%A6%96%E4%B8%93/" rel="tag"># 首专</a>
+              <a href="/tags/%E5%8F%8C%E9%B1%BC/" rel="tag"># 双鱼</a>
           </div>
 
         
@@ -351,7 +411,7 @@
     <img class="site-author-image" itemprop="image" alt="汉霄星系漫游指南"
       src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">汉霄星系漫游指南</p>
-  <div class="site-description" itemprop="description">欢迎你登上这座末日飞船，与光年们一同参观汉霄星系</div>
+  <div class="site-description" itemprop="description">欢迎你登上这座末日飞船</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -376,6 +436,14 @@
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/p/1005057126261213/photos?from=page_100505" title="微博 → https:&#x2F;&#x2F;weibo.com&#x2F;p&#x2F;1005057126261213&#x2F;photos?from&#x3D;page_100505" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>微博</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://music.163.com/#/user/home?id=2106020247" title="网易云音乐 → https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;2106020247" rel="noopener" target="_blank"><i class="fa fa-music fa-fw"></i>网易云音乐</a>
+      </span>
+  </div>
 
 
 
@@ -397,14 +465,24 @@
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 1989 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">汉霄星系漫游指南</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">NaNm</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">NaN:aN</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
         
@@ -430,7 +508,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
@@ -441,6 +519,10 @@
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 

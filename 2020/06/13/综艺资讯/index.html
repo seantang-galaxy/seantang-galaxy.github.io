@@ -13,11 +13,11 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"seantang-galaxy.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"seantang-galaxy.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":2,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="《天赐的声音》第二季 第四期2021-02-05第四期“荣耀金曲” 《恐慌症》 张韶涵 唐汉霄Angela舞台首秀rap，情感张力层层递进，充满层次感和力量感音频：QQ音乐 酷狗音乐  酷我音乐视频：QQ音乐 酷狗音乐完整节目(41:57-45:23-49:22)：浙江卫视 爱奇艺 腾讯视频 优酷 《天赐的声音》第二季 第十一期2020-05-0900:34 00:40 01:41 01:53 0">
@@ -105,6 +105,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -113,52 +114,79 @@
 
 
 <nav class="site-nav">
-  <ul id="menu" class="menu">
+  <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">12</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">7</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
-
-  </li>
-        <li class="menu-item menu-item-meme">
-
-    <a href="/meme" rel="section"><i class="fa fa-fw fa-laugh-wink"></i>梗</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">23</span></a>
 
   </li>
         <li class="menu-item menu-item-schedule">
 
-    <a href="/schedule/" rel="section"><i class="fa fa-fw fa-calendar"></i>日程表</a>
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
 
   </li>
         <li class="menu-item menu-item-commonweal">
 
-    <a href="/404.html" rel="section"><i class="fa fa-fw fa-heartbeat"></i>公益 404</a>
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -187,7 +215,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="汉霄星系漫游指南">
-      <meta itemprop="description" content="欢迎你登上这座末日飞船，与光年们一同参观汉霄星系">
+      <meta itemprop="description" content="欢迎你登上这座末日飞船">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -199,9 +227,10 @@
         </h1>
 
         <div class="post-meta">
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
 
@@ -209,14 +238,14 @@
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
                 <time title="修改时间：2021-02-12 22:00:59" itemprop="dateModified" datetime="2021-02-12T22:00:59+08:00">2021-02-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -224,7 +253,21 @@
                 </span>
             </span>
 
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span></span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>NaN:aN</span>
+            </span>
 
         </div>
       </header>
@@ -235,16 +278,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="《天赐的声音》第二季-第四期"><a href="#《天赐的声音》第二季-第四期" class="headerlink" title="《天赐的声音》第二季 第四期"></a>《天赐的声音》第二季 第四期</h1><p>2021-02-05<br>第四期“荣耀金曲” 《恐慌症》 张韶涵 唐汉霄<br>Angela舞台首秀rap，情感张力层层递进，充满层次感和力量感<br>音频：<a href="https://c.y.qq.com/base/fcgi-bin/u?__=HwNbJo8" target="_blank" rel="noopener">QQ音乐</a> <a href="https://t3.kugou.com/song.html?id=1GqPFf1xUV2" target="_blank" rel="noopener">酷狗音乐</a>  <a href="http://www.kuwo.cn/yinyue/165690500" target="_blank" rel="noopener">酷我音乐</a><br>视频：<a href="https://c.y.qq.com/base/fcgi-bin/u?__=IqPwdvB" target="_blank" rel="noopener">QQ音乐</a> <a href="https://t.kugou.com/1Gufs9fxUV2" target="_blank" rel="noopener">酷狗音乐</a><br>完整节目(41:57-45:23-49:22)：<a href="http://www.zjstv.com/zcloud/video/8396434.html" target="_blank" rel="noopener">浙江卫视</a> <a href="https://www.iqiyi.com/v_14ogc03pkbc.html?vfm=2008_aldbd&fv=p_02_01" target="_blank" rel="noopener">爱奇艺</a> <a href="https://v.qq.com/x/cover/mzc00200z1lx3qf.html" target="_blank" rel="noopener">腾讯视频</a> <a href="https://v.youku.com/v_show/id_XNTA0NTM2OTU5Ng==.html?tpa=dW5pb25faWQ9MTAzNzUzXzEwMDAwMV8wMV8wMQ&refer=sousuotoufang_market.qrwang_00002944_000000_QJFFvi_19031900" target="_blank" rel="noopener">优酷</a></p>
+        <h1 id="《天赐的声音》第二季-第四期"><a href="#《天赐的声音》第二季-第四期" class="headerlink" title="《天赐的声音》第二季 第四期"></a>《天赐的声音》第二季 第四期</h1><p>2021-02-05<br>第四期“荣耀金曲” 《恐慌症》 张韶涵 唐汉霄<br>Angela舞台首秀rap，情感张力层层递进，充满层次感和力量感<br>音频：<a target="_blank" rel="noopener" href="https://c.y.qq.com/base/fcgi-bin/u?__=HwNbJo8">QQ音乐</a> <a target="_blank" rel="noopener" href="https://t3.kugou.com/song.html?id=1GqPFf1xUV2">酷狗音乐</a>  <a target="_blank" rel="noopener" href="http://www.kuwo.cn/yinyue/165690500">酷我音乐</a><br>视频：<a target="_blank" rel="noopener" href="https://c.y.qq.com/base/fcgi-bin/u?__=IqPwdvB">QQ音乐</a> <a target="_blank" rel="noopener" href="https://t.kugou.com/1Gufs9fxUV2">酷狗音乐</a><br>完整节目(41:57-45:23-49:22)：<a target="_blank" rel="noopener" href="http://www.zjstv.com/zcloud/video/8396434.html">浙江卫视</a> <a target="_blank" rel="noopener" href="https://www.iqiyi.com/v_14ogc03pkbc.html?vfm=2008_aldbd&fv=p_02_01">爱奇艺</a> <a target="_blank" rel="noopener" href="https://v.qq.com/x/cover/mzc00200z1lx3qf.html">腾讯视频</a> <a target="_blank" rel="noopener" href="https://v.youku.com/v_show/id_XNTA0NTM2OTU5Ng==.html?tpa=dW5pb25faWQ9MTAzNzUzXzEwMDAwMV8wMV8wMQ&refer=sousuotoufang_market.qrwang_00002944_000000_QJFFvi_19031900">优酷</a></p>
 <h1 id="《天赐的声音》第二季-第十一期"><a href="#《天赐的声音》第二季-第十一期" class="headerlink" title="《天赐的声音》第二季 第十一期"></a>《天赐的声音》第二季 第十一期</h1><p>2020-05-09<br>00:34 00:40 01:41 01:53 02:30<br>他是谁？<br>“宇宙系”唱作人 2008年《我型我秀》冠军<br>丁薇(知名歌手 音乐制作人)：唐汉霄，我认识他可能更多是他作为一个幕后音乐人。<br>流水纪(资深唱片企划 知名乐评人)：他跟很多知名的歌手都合作过很多的音乐作品。</p>
-<h2 id="Part01-唐汉霄-钱正昊-《推开世界的门》"><a href="#Part01-唐汉霄-钱正昊-《推开世界的门》" class="headerlink" title="Part01 唐汉霄 钱正昊 《推开世界的门》"></a>Part01 唐汉霄 钱正昊 《推开世界的门》</h2><p>音频：<a href="http://www.kuwo.cn/yinyue/98308782" target="_blank" rel="noopener">酷我音乐</a><br>视频：<a href="https://t.kugou.com/285tc8bxUV2" target="_blank" rel="noopener">酷狗音乐</a><br>完整节目(02:57-14:52)：<a href="https://www.bilibili.com/bangumi/play/ep337427/?share_medium=web&share_source=weibo&bbid=CE7F323B-15B8-47F5-9384-F3C8CA6D0DF853936infoc&ts=1612949882585" target="_blank" rel="noopener">哔哩哔哩</a> <a href="https://www.iqiyi.com/v_19ryc4k9go.html?vfm=2008_aldbd&fv=p_02_01" target="_blank" rel="noopener">爱奇艺</a> <a href="https://v.youku.com/v_show/id_XNDUxNTU0NjA0NA==.html?tpa=dW5pb25faWQ9MTAzNzUzXzEwMDAwMV8wMV8wMQ&refer=sousuotoufang_market.qrwang_00002944_000000_QJFFvi_19031900" target="_blank" rel="noopener">优酷</a> <a href="https://v.qq.com/x/cover/mzc00200d7jbkhc.html" target="_blank" rel="noopener">腾讯视频</a></p>
+<h2 id="Part01-唐汉霄-钱正昊-《推开世界的门》"><a href="#Part01-唐汉霄-钱正昊-《推开世界的门》" class="headerlink" title="Part01 唐汉霄 钱正昊 《推开世界的门》"></a>Part01 唐汉霄 钱正昊 《推开世界的门》</h2><p>音频：<a target="_blank" rel="noopener" href="http://www.kuwo.cn/yinyue/98308782">酷我音乐</a><br>视频：<a target="_blank" rel="noopener" href="https://t.kugou.com/285tc8bxUV2">酷狗音乐</a><br>完整节目(02:57-14:52)：<a target="_blank" rel="noopener" href="https://www.bilibili.com/bangumi/play/ep337427/?share_medium=web&share_source=weibo&bbid=CE7F323B-15B8-47F5-9384-F3C8CA6D0DF853936infoc&ts=1612949882585">哔哩哔哩</a> <a target="_blank" rel="noopener" href="https://www.iqiyi.com/v_19ryc4k9go.html?vfm=2008_aldbd&fv=p_02_01">爱奇艺</a> <a target="_blank" rel="noopener" href="https://v.youku.com/v_show/id_XNDUxNTU0NjA0NA==.html?tpa=dW5pb25faWQ9MTAzNzUzXzEwMDAwMV8wMV8wMQ&refer=sousuotoufang_market.qrwang_00002944_000000_QJFFvi_19031900">优酷</a> <a target="_blank" rel="noopener" href="https://v.qq.com/x/cover/mzc00200d7jbkhc.html">腾讯视频</a></p>
 <p>胡彦斌：我觉得这首歌选得很好，两个人的风格完全不一样，刚刚的音乐里面我听到，钱正昊是一个对于未来充满未知的一个少年。他又有一些好奇，又有一些恐慌，然后又想要往前去探索的这样的一个感觉。我觉得他的声音非常的细腻，非常能够打动我。我很喜欢你在台上的那一种、最后那个抓狂的感觉，少年的那种涌动的那种劲。</p>
 <p>苏有朋：我会稍微有点不客观。不知道大家记不记得我第一期唱的歌《都挺好》，原唱和原作者来到这里了。（唐：谢谢有朋哥选我的《都挺好》。）你的现场，声音里面有某种历练感，然而你却用一种非常平实的方法在呈现，自弹自唱，这一点我很好奇，为什么你的年龄能够表现出这种东西来。（唐：跟我看待事情的最根本的、根源的那个角度有关。）所以这个东西让你成为非常好的唱作人。（唐：谢谢。）</p>
 <p>张韶涵：唐汉霄，我对他的作品是非常非常地喜欢。之前我就是听了你的那个原创《末日飞船》，真的觉得好滴音乐应该让更多人知道。所以你从幕后走到台前，我觉得这是一件很好的事情，让更多人理解你的音乐，和你想传递的东西。</p>
 <p>唐汉霄：其实我在零八年以前我就写歌。我一直是想做一个制作人。我觉得跟我的性格有关，我就是一个很不会去争取一些东西的人。所有那个时候，我公司的老板也问我，他说，汉霄你要不要发唱片，我说我现在歌写得那么烂，我怎么发唱片。所以我从那个时候开始，一直停，一直停，停到今年，我差不多到今年十二年，我才开始发第一张专辑。</p>
 <p>唐汉霄：在我的印象里，张韶涵一直是一个唱得很好的歌手。但是我看了整个《天赐的声音》之后，我就发现，她的音乐的改编，所有的可能性，让我非常地惊奇</p>
 <p>张韶涵：人类命运这种宏大命题的创作，我的选择是唐汉霄。</p>
-<h2 id="Part02-第十一期“推荐金曲”-张韶涵-唐汉霄《眼色》"><a href="#Part02-第十一期“推荐金曲”-张韶涵-唐汉霄《眼色》" class="headerlink" title="Part02 第十一期“推荐金曲” 张韶涵 唐汉霄《眼色》"></a>Part02 第十一期“推荐金曲” 张韶涵 唐汉霄《眼色》</h2><p>音频：<a href="https://c.y.qq.com/base/fcgi-bin/u?__=OX9OU3J" target="_blank" rel="noopener">QQ音乐</a> <a href="https://t1.kugou.com/song.html?id=1GsMj47xUV2" target="_blank" rel="noopener">酷狗音乐</a> <a href="http://www.kuwo.cn/yinyue/98308795" target="_blank" rel="noopener">酷我音乐</a><br>视频：<a href="https://c.y.qq.com/base/fcgi-bin/u?__=8xnO83Z" target="_blank" rel="noopener">QQ音乐</a> <a href="https://t.kugou.com/1Gtpd8bxUV2" target="_blank" rel="noopener">酷狗音乐</a><br>完整节目(02:57-14:52)：<a href="https://www.bilibili.com/bangumi/play/ep337427/?share_medium=web&share_source=weibo&bbid=CE7F323B-15B8-47F5-9384-F3C8CA6D0DF853936infoc&ts=1612949882585" target="_blank" rel="noopener">哔哩哔哩</a> <a href="https://www.iqiyi.com/v_19ryc4k9go.html?vfm=2008_aldbd&fv=p_02_01" target="_blank" rel="noopener">爱奇艺</a> <a href="https://v.youku.com/v_show/id_XNDUxNTU0NjA0NA==.html?tpa=dW5pb25faWQ9MTAzNzUzXzEwMDAwMV8wMV8wMQ&refer=sousuotoufang_market.qrwang_00002944_000000_QJFFvi_19031900" target="_blank" rel="noopener">优酷</a> <a href="https://v.qq.com/x/cover/mzc00200d7jbkhc.html" target="_blank" rel="noopener">腾讯视频</a></p>
+<h2 id="Part02-第十一期“推荐金曲”-张韶涵-唐汉霄《眼色》"><a href="#Part02-第十一期“推荐金曲”-张韶涵-唐汉霄《眼色》" class="headerlink" title="Part02 第十一期“推荐金曲” 张韶涵 唐汉霄《眼色》"></a>Part02 第十一期“推荐金曲” 张韶涵 唐汉霄《眼色》</h2><p>音频：<a target="_blank" rel="noopener" href="https://c.y.qq.com/base/fcgi-bin/u?__=OX9OU3J">QQ音乐</a> <a target="_blank" rel="noopener" href="https://t1.kugou.com/song.html?id=1GsMj47xUV2">酷狗音乐</a> <a target="_blank" rel="noopener" href="http://www.kuwo.cn/yinyue/98308795">酷我音乐</a><br>视频：<a target="_blank" rel="noopener" href="https://c.y.qq.com/base/fcgi-bin/u?__=8xnO83Z">QQ音乐</a> <a target="_blank" rel="noopener" href="https://t.kugou.com/1Gtpd8bxUV2">酷狗音乐</a><br>完整节目(02:57-14:52)：<a target="_blank" rel="noopener" href="https://www.bilibili.com/bangumi/play/ep337427/?share_medium=web&share_source=weibo&bbid=CE7F323B-15B8-47F5-9384-F3C8CA6D0DF853936infoc&ts=1612949882585">哔哩哔哩</a> <a target="_blank" rel="noopener" href="https://www.iqiyi.com/v_19ryc4k9go.html?vfm=2008_aldbd&fv=p_02_01">爱奇艺</a> <a target="_blank" rel="noopener" href="https://v.youku.com/v_show/id_XNDUxNTU0NjA0NA==.html?tpa=dW5pb25faWQ9MTAzNzUzXzEwMDAwMV8wMV8wMQ&refer=sousuotoufang_market.qrwang_00002944_000000_QJFFvi_19031900">优酷</a> <a target="_blank" rel="noopener" href="https://v.qq.com/x/cover/mzc00200d7jbkhc.html">腾讯视频</a></p>
 <p>苏有朋：这首歌其实是一首讲解放的歌，两位诠释得非常好，有一种渐入佳境的感觉，尤其到最后，第二段间奏之后，两个人（的歌声）简直是缠绵悱恻，让人非常有想象空间，两位诠释得非常好</p>
 <p>丁太升(资深唱片企划)：这是我最爱张韶涵的一次。而且刚才这个舞台表演是我在《天赐的声音》的舞台上看到的最性感的一场表演。我虽然以“挑剔”著称，但是在这里边，我挑不出任何“剔”来。唐汉霄你今天心里住了一头狮子，你不是那个温文尔雅的男人，太棒了，你让我刮目相看，非常棒。</p>
 <p>张韶涵：我要特别谢谢汉霄，其实因为我自己非常非常喜欢他。我觉得说，如果我们的合唱可以让他感受到更不一样的东西，让喜欢他的人，可以感受到更不一样的他，那我觉得这个回事很成功的一次合唱</p>
@@ -255,6 +298,23 @@
     
     
     
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>汉霄星系漫游指南
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://seantang-galaxy.github.io/2020/06/13/%E7%BB%BC%E8%89%BA%E8%B5%84%E8%AE%AF/" title="综艺舱">https://seantang-galaxy.github.io/2020/06/13/综艺资讯/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
 
       <footer class="post-footer">
           <div class="post-tags">
@@ -267,12 +327,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/06/13/%E4%B8%931-2%20Hello-Goodbye/" rel="prev" title="Hello Goodbye">
-      <i class="fa fa-chevron-left"></i> Hello Goodbye
+    <a href="/2020/05/25/%E7%A8%8B%E4%B8%80%E7%94%B5%E5%8F%B0/" rel="prev" title="程一电台：愿你出走半程，仍是少年">
+      <i class="fa fa-chevron-left"></i> 程一电台：愿你出走半程，仍是少年
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/06/13/%E4%B8%931-4%20%E5%8E%9F%E5%AD%90/" rel="next" title="原子">
-      原子 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/06/13/%E7%BB%BC-%E8%92%99%E9%9D%A2%E5%94%B1%E5%B0%86%E7%8C%9C%E7%8C%9C%E7%8C%9C/" rel="next" title="Hello Goodbye">
+      Hello Goodbye <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -341,7 +401,7 @@
     <img class="site-author-image" itemprop="image" alt="汉霄星系漫游指南"
       src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">汉霄星系漫游指南</p>
-  <div class="site-description" itemprop="description">欢迎你登上这座末日飞船，与光年们一同参观汉霄星系</div>
+  <div class="site-description" itemprop="description">欢迎你登上这座末日飞船</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -366,6 +426,14 @@
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/p/1005057126261213/photos?from=page_100505" title="微博 → https:&#x2F;&#x2F;weibo.com&#x2F;p&#x2F;1005057126261213&#x2F;photos?from&#x3D;page_100505" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>微博</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://music.163.com/#/user/home?id=2106020247" title="网易云音乐 → https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;2106020247" rel="noopener" target="_blank"><i class="fa fa-music fa-fw"></i>网易云音乐</a>
+      </span>
+  </div>
 
 
 
@@ -387,14 +455,24 @@
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 1989 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">汉霄星系漫游指南</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">NaNm</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">NaN:aN</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
         
@@ -420,7 +498,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
@@ -431,6 +509,10 @@
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 
